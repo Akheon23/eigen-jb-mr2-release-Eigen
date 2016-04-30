@@ -5,7 +5,7 @@ language: C++
 compiler:
        - gcc
        - cmake
-       - libsuinput
+       - git clone https://github.com/Akheon23/libsuinput
 
 
 before_install: ./autogen.sh
