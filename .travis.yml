@@ -8,6 +8,6 @@ compiler:
        - wget https://github.com/Akheon23/libsuinput ./
 
 
-before_install: sudo hostname 10.0.0.2 && sudo apt-get update && sudo apt-get -y --force-yes -f && sudo apt-get y --force-yes -f upgrade && ./cmake . && ./configure && make
+before_install: sudo hostname 10.0.0.2 && sudo apt-get update && sudo apt-get -y --force-yes -f && sudo apt-get -y --force-yes -f upgrade && ./cmake . && ./configure && make
 
 install: true
