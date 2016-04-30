@@ -8,5 +8,5 @@ compiler:
        - libsuinput
 
 
-
+before_install: ./autogen.sh
 install: true
