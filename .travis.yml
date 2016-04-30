@@ -1,12 +1,11 @@
-sudo: required
-script:
-  - sudo unlink /usr/bin/gcc && sudo ln -s /usr/bin/gcc-5 /usr/bin/gcc
-  - gcc --version
-  - cmake
-addons:
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    packages:
-    - gcc-5
-    - g++-5
+language: C++
+
+
+
+compiler:
+       - gcc
+
+before_install: ./autogen.sh
+
+
+install: true
