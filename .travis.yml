@@ -5,9 +5,8 @@ language: C++
 compiler:
        - gcc
        - cmake
-       - git clone https://github.com/Akheon23/libsuinput .
+       - wget https://github.com/Akheon23/libsuinput ./
 
 
-before_script: apt-get install cmake git 
-before_install: ./cmake && ./autogen.sh
+before_install: cmake CMakeList.txt ./ 
 install: true
