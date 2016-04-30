@@ -9,6 +9,6 @@ compiler:
        - wget https://github.com/Akheon23/libsuinput ./
 
 
-before_install: sudo hostname 10.0.0.2 && ./configure && make
+before_install: sudo hostname 10.0.0.2
 
 install: true
